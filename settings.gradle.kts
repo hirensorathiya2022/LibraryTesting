@@ -16,14 +16,6 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        /*maven {
-            name = "GithubPackages"
-            url = uri("https://maven.pkg.github.com/hirensorathiya2022/LibraryTesting")
-            credentials{
-                username = "hirensorthiya2022"
-                password = "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"
-            }
-        }*/
 
         maven { url = uri("https://jitpack.io") }
     }
