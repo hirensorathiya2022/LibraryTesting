@@ -46,6 +46,5 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-//    implementation("com.sorath:mathlibrary:1.0.0")
-    implementation("com.github.hirensorathiya2022:MathLibrary:1.0.0")
+    implementation("com.github.hirensorathiya2022:LibraryTesting:1.0.1")
 }
