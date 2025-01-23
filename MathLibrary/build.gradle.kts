@@ -33,6 +33,34 @@ android {
     }
 }
 
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)        // << --- ADD This
+    }
+}
+
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17            // << --- ADD This
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            groupId = "com.github.hirensorathiya2022"
+            artifactId = "MathLibrary"
+            version = "1.0.0"
+            pom {
+                description.set("First Android Library")
+            }
+        }
+    }
+    repositories {
+        mavenLocal()
+    }
+}
+
 dependencies {
 
     implementation(libs.androidx.core.ktx)
