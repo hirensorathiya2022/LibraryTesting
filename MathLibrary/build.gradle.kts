@@ -25,15 +25,15 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "11"
+        jvmTarget = "17"
     }
 }
 
-java {
+/*java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(17)        // << --- ADD This
     }
@@ -43,7 +43,7 @@ java {
 java {
     sourceCompatibility = JavaVersion.VERSION_17            // << --- ADD This
     targetCompatibility = JavaVersion.VERSION_17
-}
+}*/
 
 publishing {
     publications {
